@@ -31,6 +31,4 @@ darkModeToggle.addEventListener('input', () => {
 function enableTheme() {
     document.body.style.setProperty("--bg-color", darkModeEnabled ? "#1b1b1b" : "#e4e4e4")
     document.body.style.setProperty("--body-fore-color", darkModeEnabled ? "#eaeaea" : "#151515")
-    document.body.style.setProperty("--here-text-color", darkModeEnabled ? "#b1b1b1" : "#595959")
-    // document.body.style.setProperty("--slider-before-bg-color", darkModeEnabled ? "1b1b1b" : "#e4e4e4")
 }
