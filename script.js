@@ -16,7 +16,7 @@ if (onMobile) {
 }
 
 darkModeToggle.addEventListener('input', () => {
-    darkModeEnabled = (sessionStorage.getItem("costin-dark-mode-enabled") == "true");
+    darkModeEnabled = !(sessionStorage.getItem("costin-dark-mode-enabled") == "true");
     sessionStorage.setItem('costin-dark-mode-enabled', darkModeToggle.checked);
     enableTheme();
 })
