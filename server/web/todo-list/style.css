@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+
+:root {
+  --toggle-todo-bg-color: rgb(0, 132, 204);
+  --toggle-todo-bg-color-hover: rgb(0, 103, 158);
+}
+
+body {
+  background-color: #e4e4e4;
+  user-select: none;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+  /* CENTER VERTICALLY & HORIZONTALLY - REMOVE FOR HORIZONTALLY ONLY*/
+  /* padding: 10vh 0; */
+}
+
+.todolist {
+  background-color: #cacaca;
+  width: 500px;
+  height: 220px;
+  border-radius: 15px;
+}
+
+#todoTitle {
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+  width: 175px;
+  height: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+#todoTitle:hover {
+  background-color: #e3e3e3;
+}
+
+#todoTitle:focus {
+  outline: none;
+}
+
+#addTodo {
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  width: 125px;
+  height: 33px;
+  transition: all 0.2s ease-in-out;
+}
+
+#addTodo:hover {
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
+
+#color {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#colorPicker {
+  width: 80px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+}
+
+#colorPicker:hover {
+  cursor: pointer;
+}
+
+#todoColorText {
+  font-weight: 500;
+}
+
+.deleteTodo {
+  margin-left: auto;
+  margin-right: 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 34px;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.deleteTodo:hover {
+  background-color: rgb(170, 0, 0);
+  cursor: pointer;
+}
+
+.toggleTodo {
+  /* margin-left: 300px; */
+  margin-right: 10px;
+  border: none;
+  background-color: var(--toggle-todo-bg-color);
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.toggleTodo:hover {
+  background-color: var(--toggle-todo-bg-color-hover);
+  cursor: pointer;
+}
+
+.todo {
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 450;
+  border-radius: 15px;
+}
+
+.todo p {
+  margin-left: 10px;
+}
+
+.finished {
+  background-color: rgb(22, 191, 0);
+}
+
+.finishedP {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  text-decoration-color: red;
+}
+
+.finished:hover {
+  background-color: rgb(16, 135, 0);
+}
+
+h1 {
+  font-size: 3rem;
+}
